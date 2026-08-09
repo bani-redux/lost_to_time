@@ -4,4 +4,4 @@ region       = "us-east-1"
 domain_name  = "dev.example.com"
 lambda_memory = 128
 lambda_timeout = 10
-name           = "somewhere in the past"
+dragon_name           = "somewhere in the past"
