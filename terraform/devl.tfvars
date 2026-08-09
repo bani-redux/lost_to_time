@@ -5,3 +5,4 @@ domain_name  = "dev.example.com"
 lambda_memory = 128
 lambda_timeout = 10
 name           = ""
+dragon         = False
