@@ -26,3 +26,5 @@ Files of interest:
 - `.drone.yml` - example Drone CI pipeline
 
 Note: All values are dummy and for illustration only.
+
+SOMEONE IS TRYING TO WIPE MY DIGITAL PRESENCE
