@@ -1,0 +1,27 @@
+kind: pipeline
+type: docker
+name: default
+
+steps:
+  - name: terraform:init
+    image: hashicorp/terraform:1.5.0
+    commands:
+      - terraform --version
+      - cd terraform
+      - terraform init -input=false
+
+  - name: terraform:plan
+    image: hashicorp/terraform:1.5.0
+    commands:
+      - cd terraform
+      - terraform plan -var-file=devl.tfvars -out=tfplan
+
+  - name: terraform:apply
+    image: hashicorp/terraform:1.5.0
+    commands:
+      - cd terraform
+      - terraform apply -input=false -auto-approve tfplan
+
+trigger:
+  branch:
+    - main
